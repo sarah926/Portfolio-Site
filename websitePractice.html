@@ -1,77 +1,159 @@
 <!DOCTYPE html>
-<html lang="en" href="#home"> <script src="java.js"></script>
-    <head>
-        <link rel="stylesheet" type="text/css" href="test.css"/>
-        <title>Sarah's Porfolio</title>
-    </head>
-    <body>
-        <!-- top navigation bar -->
-        <div class="topnav">
-            <a class="active" href="#home"><img src="home.svg" class="icon"/> </a>
-            <a href="#projects" > <script language="javascript">
+<html lang="en" href="#home">
+<script src="java.js"></script>
 
-                function return1()
-                {
-                  window.location="projects.html";
-                }
-                </script>Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#about"> <img src="Profile.svg" class="icon"/></a>
-          </div>
-        <!-- full screen -->
-            <div style="width: 100%; height: 100%; float: left; background: #b9b6fa;"> 
-                <div>
-                    <h1 class="title" style="font-size: 150px; float: left; padding: 20px; margin-top:150px">Sarah Toll</h1>
-                    <img src="mountain.png" class="profileImage">
-                </div>
-                <div class="download">
-                    <button class="downloadButton">Download My Resume <img class="downloadImage" src="download4.png"/></button>
-                </div>
-                <div style="justify-content: left; text-align: left; padding-left: 20px">
-                    <h2>A computer science student working on developing technical skills.</h2>
-                    <h3>Stay to follow my journey of improvement in various technical areas including front end development, 
-                        project management, and UI design.
-                    </h3>
-                </div>
-                <div style="width: 100%; height: 200px; float: left; ">
-                    <div class="lilSquare">
-                        <h3>Front End Development</h3>
-                        <h3 style="font-size: 12px;">Create IOS apps using Swift. Development
-                        of sites utilizing CSS, HTML and Javascript</h3>
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css" />
+    <title>Sarah's Porfolio</title>
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <div class="topnav">
+        <a class="active" href="websitePractice.html"><img src="images/homeIcon.png" class="icon"
+                style="margin-right: 90%" /> </a>
+        <a href="about.html"> <img src="images/about.png" class="icon" style="margin-left: 91%; position: absolute;" /></a>
+    </div>
+    <!-- full screen -->
+    <div style="width: 100%; height: 100%; float: left; ">
+        <div>
+            <h1 class="title" style="font-size: 150px; float: left; margin-top:150px">Sarah Toll</h1>
+            <img src="images/mountain.png" class="profileImage">
+        </div>
+        <h1
+            style="font-size: 36; float: left; color: #fff; margin-left: 60px; margin-top: -125px; font-weight: lighter;">
+            This is my world, you're just viewing it. </h1>
+        <!-- get resume button and links -->
+        <div class="download">
+            <button class="downloadButton" type="submit" onclick="window.open('SarahPMResume.pdf')">
+                <img class="downloadImage" style="margin-top: 17px; margin-bottom: 17px; margin-left: 5px;"
+                    src="images/downloadIcon.png" />
+                <label
+                    style="font-size: 24px; display: inline-block; margin-top: 23px; margin-bottom: 23px;">Resume</label>
+            </button>
+            <a href="http://www.linkedin.com/in/sarah-toll"><img src="images/linkedin.svg" class="icon"
+                    style="float:left; margin-left: 50px; margin-top: 10px" /></a>
+            <a href="https://github.com/sarah926/"><img src="images/github.svg" class="icon"
+                    style="display: inline-block;margin-left: 50px;margin-top: 10px" /></a>
+        </div>
+        <!-- projects quick look -->
+        <div style="float: left; margin: 50px;">
+            <h1>Key Projects:</h1>
+            <div class="container">
+                <a href="runDetails.html"> <img class="image" src="images/RunBuddyLogo 1no1 (1).png" />
+                    <div class="overlay">
+                        <div class="text">Running App developed in SwiftUI</div>
                     </div>
-                    <div class="lilSquare">
-                        <h3>UI Design</h3>
-                        <h3 style="font-size: 12px;">Figma wireframing before starting development.</h3>
-                    </div>
-                    <div class="lilSquare">
-                        <h3>Math</h3>
-                        <h3 style="font-size: 12px;">Calculus, Differential Equations, R coding.</h3>
-                    </div>
-                </div>  
-
-
-
-                <div class="education">
-                    <img src="school.png" class="icon"/>
-                    <h2>Education:</h2>
-                    <h3 >University of Guelph, Graduating May 2024. Bachelors of Computing with a major 
-                        in computer science and a minor in mathematics. Consistently on Deans Honours List.
-                    </h3>
-                </div>
-                <div class="education">
-                    <img src="laptop.png" class="icon"/>
-                    <h2>Technical Skills</h2>
-                    <h3>Languages - Java, C, Python, Swift, CSS, HTML, SQL, Junit testing, Javascript
-                    </h3>
-                    <h3>Applications - docker, git, agile, software development life cycle, Confluence, Jira, Figma
-                    </h3>
-                </div>
+                </a>
             </div>
+            <div class="container">
+                <a href="moleculeDetails.html"> <img class="image" src="images/website pics/mol2.png" />
+                    <div class="overlay">
+                        <div class="text">Molecule Reader</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="porfolioDetails.html"> <img class="image" src="images/homeFigma.png" />
+                    <div class="overlay">
+                        <div class="text">Portfolio Site</div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-            <!-- <div style="margin-left: 25%; height: 100%; background-image: url(background3.jpeg);"> 
+        <!-- spotify section -->
+        <div style="margin: 70px; padding-top: 350px">
+            <h1>what i listen to when i code:</h1>
+            <iframe style="border-radius:12px;padding-left: 50px;"
+                src="https://open.spotify.com/embed/track/0PAcdVzhPO4gq1Iym9ESnK?utm_source=generator" width="48%"
+                height="200" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <iframe style="border-radius:12px; float: left"
+                src="https://open.spotify.com/embed/track/6ZRuF2n1CQxyxxAAWsKJOy?utm_source=generator&theme=0"
+                width="48%" height="200" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <!-- <iframe style="border-radius:12px; float: left;"
+                src="https://open.spotify.com/embed/track/4pAl7FkDMNBsjykPXo91B3?utm_source=generator" width="48%"
+                height="200" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe> -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3GCdLUSnKSMJhs4Tj6CV3s?utm_source=generator" 
+                width="48%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px;padding-left: 50px;" src="https://open.spotify.com/embed/track/4pAl7FkDMNBsjykPXo91B3?utm_source=generator&theme=0" 
+                width="48%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 
-                Right Div
-            </div> -->   
-    </body>
-</html>
+        </div>
+        <!-- skills section -->
+        <div style="width: 100%; height: 305px; ">
+            <div class="lilSquare" style=" float: left">
+                <h3 style="font-size: 24px; margin-left: 50px; margin-top: 50px">Technical Skills:</h3>
+                <h3 style="font-size: 16px;margin-left: 50px;">
+                    <ul>
+                        <li>Web Development </li>
+                        <li>UX</li>
+                        <li>Agile Software Development</li>
+                        <li>Responsive Design </li>
+                        <li>Version Control</li>
+                        <li>Confluence, Jira, Figma</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </h3>
+            </div>
+            <div class="lilSquare" style=" float: left">
+                <h3 style="font-size: 24px;margin-left: 60px; margin-top: 50px">Languages:</h3>
+                <h3 style="font-size: 16px;margin-left: 60px">
+                    <ul>
+                        <li>Java </li>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>Swift</li>
+                        <li>CSS + HTML + Javascript</li>
+                    </ul>
+                </h3>
+            </div>
+            <div class="lilSquare" style=" float: left">
+                <h3 style="font-size: 24px; margin-left: 60px; margin-top: 50px">Soft Skills:</h3>
+                <h3 style="font-size: 16px;margin-left: 60px;">
+                    <ul>
+                        <li>Creativity </li>
+                        <li>Critical thinking</li>
+                        <li>Problem solving</li>
+                        <li>Perseverance</li>
+                        <li>Communication</li>
+                        <li>Team player</li>
+                        <li>Constantly learning</li>
+                        <li>Detail oriented</li>
+                        <li>Time Management</li>
+                    </ul>
+                </h3>
+            </div>
+        </div>
+        <!-- education section -->
+        <div class="education" style="margin-top: 100px;">
+            <img src="images/guelph.png" style="width: 100px; height: auto" />
+            <h2 style="display: inline-block">Education:</h2>
+            <h3>University of Guelph, Graduating May 2024. Bachelors of Computing with a major
+                in computer science and a minor in mathematics. Consistently on Deans Honours List.
+            </h3>
+        </div>
+    </div>
+<!-- personal photos section -->
+    <div style="float: left;">
+        <h1 style="margin-left: 50px">my life when im not coding</h1>
+        <img src="images/IMG_3845.jpeg" class="lilPicture" />
+        <img src="images/IMG_3646.jpeg" class="lilPicture" />
+        <img src="images/IMG_3570.jpeg" class="lilPicture" />
+        <img src="images/IMG_4202.jpeg" class="lilPicture" />
+        <img src="images/IMG_4130.jpeg" class="lilPicture" />
+        
+        <img src="images/IMG_4389.jpeg" class="lilPicture" />
+        <img src="images/IMG_4427.jpeg" class="lilPicture" />
+        <img src="images/IMG_4705.jpeg" class="lilPicture" />
+        <img src="images/IMG_2810.jpeg" class="lilPicture" />
+    </div>
+</body>
 
+</html>
