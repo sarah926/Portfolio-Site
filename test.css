@@ -22,7 +22,7 @@ body {
   display:inline-block;
   color: #333;
   background-color: #fff;
-  margin-left: 130px;
+  margin-left: 10%;
   border-radius: 50%;
   transition: transform 0.8s;
   margin-bottom: 0;
@@ -36,19 +36,24 @@ body {
     /* -webkit-text-stroke: #262121; */
     /* -webkit-text-stroke-color: #262121;
     -webkit-text-stroke-width: 6px; */
-    margin-left: 50px;
+    margin-left: 5%;
     color: #fff;
     font-weight: bolder;
     font-size: xx-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* /calc(16px + 0.4vw); */
   }
+  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
 
   h1{
     color: #fff;
-    font-weight:lighter
+    /* font-weight:bolder; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   h2 {
-    font-size: 36px;
+    /* font-size: calc(16px + 2vw); */
+    font-size: 36; color: #fff; margin-left: 5%; font-weight: lighter; 
   }
 h3 {
     font-size: 18px;
@@ -59,29 +64,31 @@ ul{
 }
 .profileImage {
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    padding: 20px;
+    width: 20%;
+    height: auto;
+    padding: 2%;
     border: 5px solid black;
-    margin: 50px;
-    margin-top: 75px;
 }
 .topnav {
     background-color: #E03286;
-    overflow: hidden;
     width: 100%;
+    margin-top: 1%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    /*
     margin-left:10px;
+    overflow: hidden;
     padding: 0;
     padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    */
   }
   .topnav a {
     float: left;
     color: #f2f2f2;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
+    /* text-align: center;
+    justify-content: center; */
+    /* text-decoration: none; */
     font-size: 30px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -97,7 +104,7 @@ ul{
   .download{
     width: 500px;
     height: 75px;
-    margin-left: 50px;
+    margin-left: 5%;
   }
   .downloadButton{
     border-radius: 10px;
@@ -115,14 +122,13 @@ ul{
   }
   .education{
     background-color: #fff;
-    width: 80%;
-    height: 200px;
-    margin: 100px;
-    width:80%;
+    margin: 4vw;
+    width:83%;
+    height: auto;
     border-radius: 5px;
     float: left;
     border-color: #333;
-    padding: 30px;
+    padding: 3%;
     border-style: solid;
     justify-content: space-between;
   }
@@ -152,7 +158,8 @@ ul{
     border: 5px solid black;
     border-radius: 20%;
     float: left;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-bottom: 5%;
   }
   
   .image {
@@ -185,6 +192,61 @@ ul{
     margin: 50px;
     border-radius: 10%;
   }
+  
   .lilPicture:hover{
     filter: blur(4px);
   }
+  @media (min-width:300px) {
+    h1{
+         font-size: 55px;
+     }
+     img.profileImage{
+      width: 10%;
+      height: auto;
+    }
+ }
+  @media (min-width:700px) {
+   h1{
+        font-size: 80px;
+    }
+    img.profileImage{
+      width: 12%;
+      height: auto;
+    }
+}
+@media (min-width:772px) {
+  h1{
+       font-size: 100px;
+   }
+   img.profileImage{
+     width: 12%;
+     height: auto;
+   }
+}
+@media (min-width:968px) {
+  h1{
+       font-size: 110px;
+   }
+   img.profileImage{
+     width: 13%;
+     height: auto;
+   }
+}
+@media (min-width:1048px) {
+    h1{
+        font-size: 130px;
+    }
+    img.profileImage{
+      width: 15%;
+      height: auto;
+    }
+}
+@media (min-width:1315px) {
+    h1{
+        font-size: 156px;
+    }
+    img.profileImage{
+      width: 18%;
+      height: auto;
+    }
+}
